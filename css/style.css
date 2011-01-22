@@ -1,0 +1,271 @@
+div#container {
+    width: 960px;
+    margin: auto;
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F5F5EB;
+}
+
+div#social {
+    position: absolute;
+    top: -25px;
+    right: 0;
+}
+
+iframe#fbLike {
+    float: right;
+    line-height: 15px;
+}
+
+p.twitter {
+    font-family: "nevisBold";
+    font-size: 12px;
+    float: right;
+    text-transform: uppercase;
+    padding-left: 20px;
+    background: url(../images/twitter.jpg) no-repeat left center;
+    line-height: 21px;
+    font-weight: normal;
+    margin: 0 10px 0 0;
+}
+
+p.twitter a {
+    color: #BD820E;
+    text-decoration: none;
+}
+
+
+a {
+    color: #BD820E;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, .header {
+    text-align: center;
+    width: 625px;
+    font-family: "Museo700";
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+    background: url(../images/guitar.png) no-repeat 671px center;
+    height: 260px;
+    padding: 45px 290px 45px 45px;
+    margin: 45px auto 22px;
+    border-top: dotted 1px #363636;
+    border-bottom: dotted 1px #363636;
+    position: relative;
+}
+
+header > h1, .header > h1 {
+    font-size: 65px;
+    color: #363636;
+    margin: 0;
+    line-height: 67px;
+    font-weight: normal;
+}
+
+header > h2, .header > h2 {
+    color: #BD820E;
+    font-size: 72px;
+    font-family: "RockwellExtraBoldRegular";
+    margin: 0;
+    line-height: 80px;
+    font-weight: normal;
+}
+
+header > h3, .header > h3 {
+    color: #7C6182;
+    color: #363636;
+    font-size: 70px;
+    font-family: "SaddlebagRegular";
+    margin: 0;
+    line-height: 46px;
+    font-weight: normal;
+}
+
+header > h1 > span, .header > h1 > span {
+    display: block;
+    font-size: 85px;
+    margin: 0;
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+header > h3 > span, .header > h3 > span {
+    width: 8px;
+    display: inline-block;
+}
+
+header > h2 > span, .header > h2 > span {
+    background: url(../images/ampersand.png) no-repeat center center;
+    text-indent: -99999px;
+    display: inline-block;
+    width: 54px;
+}
+
+sponsorship_section, .sponsorship_section {
+    margin: auto;
+    font-size: 14px;
+    line-height: 15px;
+    font-family: Arial, sans-serif;
+    vertical-align: bottom;
+    margin-bottom: 15px;
+}
+
+sponsorship_header, .sponsorship_header {
+    width: 625px;
+    margin: auto;
+    margin: 45px auto 1px;
+    padding: 0px 290px 45px 45px;
+    border-top: dotted 1px #363636;
+    position: relative;
+}
+
+.sponsorship_section h1,h2,h3 {
+    margin-bottom: 15px;
+}
+
+.sponsorship_section li {
+    margin-bottom: 15px;
+}
+
+section, .section {
+    margin: auto;
+    font-size: 14px;
+    padding-left: 400px;
+}
+
+.section p {
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 15px;
+    vertical-align: bottom;
+}
+
+aside, .aside {
+    width: 325px;
+    margin-right: 25px;
+    float: left;
+    font-size: 20px;
+    padding-left: 50px;
+    background: url(../images/quote.png) no-repeat;
+    height: 93px;
+}
+
+aside p, .aside p {
+    text-transform: uppercase;
+    font-family: "NevisBold";
+    text-indent: -2.2em;
+    line-height: 30px;
+    margin: 0;
+    vertical-align: bottom;
+    text-indent: -99999px;
+}
+
+.aside p span {
+    line-height: inherit;
+    color: #BD820E;
+    font-size: 60px;
+    font-family: "RockwellExtraBoldRegular";
+    line-height: 14px;
+    vertical-align: text-bottom;
+}
+/**
+ * Grid
+ */
+#grid{
+
+    /* Dimensions - same width as your grid with gutters */
+    width: 980px;
+
+    /* Grid (left-aligned)
+    position: absolute;
+    top: 0;
+    left: 0;
+    */
+
+    /* Grid (centered) */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -490px;
+
+}
+
+/**
+ * Vertical grid lines
+ *
+ * Set the column width taking the borders into consideration,
+ * and use margins to set column gutters.
+ */
+#grid div.vert{
+
+    width: 139px;
+    border: solid darkturquoise;
+    border-width: 0 1px;
+    margin-right: 19px;
+
+}
+
+#grid div.vert.first-line{
+
+    margin-left: 19px;
+
+}
+
+
+/**
+ * Horizontal grid lines, defined by your base line height
+ *
+ * Remember, the CSS properties that define the box model:
+ * visible height = height + borders + margins + padding
+ */
+#grid div.horiz{
+
+    /* 20px line height */
+    height: 29px;
+    border-bottom: 1px dotted darkgray;
+    margin: 0;
+    padding: 0;
+
+}
+
+/**
+* Classes for multiple grids
+*
+* When using more than one grid, remember to set the numberOfGrids 
+* option in the hashgrid.js file.
+*/
+#grid.grid-1 div.vert{
+
+    /* Vertical grid line colour for grid 1 */
+    border-color: darkturquoise;
+
+}
+#grid.grid-2{
+
+    /* Adjustments */
+    padding: 0 160px;
+    width: 660px;
+
+}
+#grid.grid-2 div.vert{
+
+    /* Vertical grid line colour for grid 2 */
+    border-color: crimson;
+
+}
+
