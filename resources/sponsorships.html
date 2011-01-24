@@ -1,0 +1,73 @@
+<?php
+$title = 'Sponsor Us - ';
+ob_start();
+?>
+
+        <div id="container" class="sub"> 
+            <div class="header"> 
+                <h1>PHP Community
+                <span>Conference</span></h1>
+                <div id="nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                    </ul>
+                </div>
+                <div id="social"> 
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.phpcon.org%2F&amp;layout=button_count&amp;show_faces=false&amp;width=80&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true" id="fbLike"></iframe> 
+                    <p class="twitter">Follow Us: <a href="http://twitter.com/phpcomcon">PHPCOMCON</a></p> 
+                </div> 
+            </div> 
+            <div id="intro"> 
+                <h2>Sponsorship Prospectus</h2>
+                <p>Instead of just collecting money in exchange for ad space, we want to take the opportunity to get to know our sponsors. We figure that this is our chance to create partnerships with people who believe in our mission, so raising the PHP community's awareness of our sponsors should be just be the beginning. Ultimately, it's our goal to find creative ways to help each other and enrich the conference experience for our attendees. This said, speaking opportunities at the conference will be evaluated independently of sponsorships or other considerations (<em>speaking slots are not for sale</em>).</p> 
+            </div>
+            <div id="body">
+                <h3>Platinum Sponsorship: $10,000.00</h3> 
+                <p>All benefits applicable to a Silver Sponsorship plus:</p> 
+                <ul> 
+                    <li>Your brand presented on a large prominently-placed banner at the conference venue</li> 
+                    <li>Top placement of your logo on our website</li> 
+                    <li>Floorspace can be made available if you would like space to connect with attendees</li> 
+                    <li>Your logo on the front of the name badges instead of the back</li> 
+                    <li>Named as the exclusive sponsor of a large-ticket item of your choice such as the after-party</li> 
+                </ul> 
+                
+                <h3>Gold Sponsorship: $5,000.00</h3> 
+                <p>All benefits applicable to a Silver Sponsorship plus:</p> 
+                <ul> 
+                    <li>Your brand presented on a prominently-placed banner at the conference venue</li> 
+                    <li>Prominent placement of your logo on our website</li> 
+                    <li>Named as the exclusive sponsor of a moderately-priced item of your choice</li> 
+                    <ul> 
+                        <li>For example: the speaker's dinner, morning break refreshments, afternoon break refreshments, lunch</li> 
+                    </ul> 
+                </ul> 
+                
+                
+                <h3>Silver Sponsorship: $2,500.00</h3> 
+                <ul> 
+                    <li>2 tickets to the main conference event</li> 
+                    <li>Your company's logo on our website and a link to your company's website</li> 
+                    <li>A tweet from @phpcomcon announcing the sponsorship</li> 
+                    <li>Personally thanked from the stage during the main conference day</li> 
+                    <li>Your company's logo on the back of the name badges</li> 
+                    <li>Included on the @phpcomcon Community Sponsor Twitter list</li> 
+                </ul>
+                
+                
+                <h3>Community Sponsorship: $500.00</h3> 
+                <ul> 
+                    <li>1 ticket to the main conference day while supplies last</li> 
+                    <ul> 
+                        <li>Tickets are limited to the first 50 Community Sponsors</li> 
+                    </ul> 
+                    <li>Special recognition on our website</li> 
+                    <li>Including your name or company name and a link to your personal or company website</li> 
+                    <li>Your Twitter name will be added to the @phpcomcon Community Sponsor Twitter list</li> 
+                </ul> 
+                </p> 
+            </div> 
+        </div> 
+<?php
+$body = ob_get_clean();
+
