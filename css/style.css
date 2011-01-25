@@ -173,7 +173,7 @@ div#container.sub h2 {
     font-family: "NevisBold";
     line-height: 40px;
     margin: 0 0 20px 0;
-
+    color: #363636;
 }
 
 div#container.sub h3 {
@@ -225,10 +225,11 @@ li {
 }
 
 .aside p {
+    color: #363636;
     text-transform: uppercase;
     font-family: "NevisBold";
     text-indent: -2.2em;
-    line-height: 40px;
+    line-height: 35px;
     margin: 0;
     vertical-align: bottom;
     /*text-indent: -99999px;*/
@@ -239,8 +240,8 @@ li {
     color: #BD820E;
     font-size: 60px;
     font-family: "RockwellExtraBoldRegular";
-    line-height: 40px;
-    vertical-align: text-top;
+    line-height: 14px;
+    vertical-align: text-bottom;
 }
 
 div#nav {
@@ -250,6 +251,7 @@ div#nav {
     font-size: 18px;
     font-family: "NevisBold";
     font-weight: normal;
+    color: #363636;
     line-height: 20px;
 }
 
@@ -287,6 +289,7 @@ div#sponsors h1 {
 }
 
 div#sponsors h2 {
+    color: #363636;
     font-size: 18px;
     font-family: "NevisBold";
     font-weight: normal;
