@@ -17,11 +17,11 @@ if (strtolower($requestedPage) == 'index' || strtolower($requestedPage) == 'inde
     header('Location: /', true, 301);
     exit;
 }
-if (!ctype_alnum($requestedPage)) {
-    $requestedPage = '404';
-}
 if (strlen($requestedPage) == 0) {
     $requestedPage = 'home';
+}
+if (!ctype_alnum($requestedPage)) {
+    $requestedPage = '404';
 }
 
 if (!(include 'resources/' . $requestedPage . '.html')) {
