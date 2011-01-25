@@ -235,8 +235,8 @@ li {
     color: #BD820E;
     font-size: 60px;
     font-family: "RockwellExtraBoldRegular";
-    line-height: 20px;
-    vertical-align: text-bottom;
+    line-height: 40px;
+    vertical-align: text-top;
 }
 
 div#nav {
@@ -263,4 +263,26 @@ div#nav li {
 
 div#nav li a {
     color: #BD820E;
+}
+
+div#sponsors h1 {
+    font-size: 18px;
+    color: white;
+    background-color: #363636;
+    font-family: "NevisBold";
+    line-height: 26px;
+    font-weight: normal;
+    text-transform: uppercase;
+    height: 26px;
+    margin: 0 0 34px 0;
+    padding-left: 8px;
+}
+
+div#sponsors h2 {
+    font-size: 18px;
+    font-family: "NevisBold";
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 20px;
+    margin: 20px 0;
 }
