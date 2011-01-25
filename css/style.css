@@ -247,13 +247,22 @@ div#nav {
     font-family: "NevisBold";
     font-weight: normal;
     line-height: 20px;
-    color: #BD820E;
 }
 
 div#nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+div#nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+div#nav li a {
+    color: #BD820E;
 }
 
 div#sponsors h1 {
