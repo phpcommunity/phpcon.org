@@ -194,6 +194,7 @@ p {
 
 ul {
     margin: 20px 0;
+    padding-left: 2em;
 }
 
 li {
@@ -222,26 +223,44 @@ li {
     padding-left: 50px;
     /*background: url(../images/quote.png) no-repeat;*/
     height: 93px;
+    position: relative;
 }
 
 .aside p {
     color: #363636;
     text-transform: uppercase;
     font-family: "NevisBold";
-    text-indent: -2.2em;
-    line-height: 35px;
+    line-height: 40px;
     margin: 0;
     vertical-align: bottom;
     /*text-indent: -99999px;*/
+    text-indent: -43px;
+}
+
+.aside p:before {
+    content: "“";
+    line-height: 40px;
+    vertical-align: top;
+    font-size: 60px;
+    font-family: "RockwellExtraBoldRegular";
+    color: #BD820E;
+
+}
+
+.aside p:after {
+    content: "”";
+    line-height: 40px;
+    vertical-align: top;
+    font-size: 60px;
+    font-family: "RockwellExtraBoldRegular";
+    color: #BD820E;
 }
 
 .aside p span {
     line-height: inherit;
-    color: #BD820E;
     font-size: 60px;
-    font-family: "RockwellExtraBoldRegular";
-    line-height: 14px;
-    vertical-align: text-bottom;
+    line-height: 40px;
+    vertical-align: text-top;
 }
 
 div#nav {
