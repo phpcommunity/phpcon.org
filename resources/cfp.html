@@ -1,0 +1,43 @@
+<?php
+$title = 'Call for Proposals - ';
+ob_start();
+?>
+
+        <div id="container" class="sub">
+            <div class="header">
+                <h1>PHP Community
+                <span>Conference</span></h1>
+                <div id="nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/sponsorships">Sponsor Us</a></li>
+                        <li>CFP</li>
+                    </ul>
+                </div>
+                <div id="social">
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.phpcon.org%2F&amp;layout=button_count&amp;show_faces=false&amp;width=80&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true" id="fbLike"></iframe>
+                    <p class="twitter">Follow Us: <a href="http://twitter.com/phpcomcon">PHPCOMCON</a></p>
+                </div>
+            </div>
+            <div class="aside">
+                <p>Tell us about an inspiring project you&rsquo;re working on and why it&rsquo;s important.</p>
+            </div>
+            <div class="section">
+
+                <h2>Call for Proposals</h2>
+                <p>We're calling for presentations on the topic of <strong>real world PHP</strong>. Tell us about an inspiring project you're working on and why it's important. We don't want to focus on the details of the code itself, but rather on <strong>how your project solves a problem or fills a need</strong>.</p>
+                <p>If selected as a speaker, we will cover your air fare and hotel costs for the dates of the event. To submit a talk, please email your proposed title and abstract to <a href="mailto:propsals@phpcon.org">proposals@phpcon.org</a> by <strong>January 31, 2011</strong>.</p>
+
+                <h3>Regular Sessions</h3>
+                <p>Regular sessions take place on the main conference day on Friday, April 22. We want you to have fun with these sessions. Tell us a story. Tell us <em>your</em> story. Don't just tell us how to do something with PHP. Tell us what you're working on with PHP. What does it do? Why is it important? Include lots of anecdotes. We want to hear them!</p>
+                <p>All sessions are 45 minutes long. They're short but sweet, so be sure you leave room for questions.</p>
+
+                <h3>In-depth, Technical Workshops</h3>
+                <p>Have a lot more technical "meat" than a 45-minute session will allow? Why not submit a proposal for a workshop? Unlike our regular sessions, workshops are in-depth, technical, and instructive. Don't be afraid to show lots of code here. In fact, it's expected.</p>
+                <p>Our workshops are held on Thursday, April 21, and each runs about three hours, including breaks.</p>
+
+            </div>
+        </div>
+<?php
+$body = ob_get_clean();
+
