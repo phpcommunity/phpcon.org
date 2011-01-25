@@ -160,6 +160,10 @@ div#container.sub div#intro {
     line-height: 20px;
 }
 
+div#intro p {
+    margin-bottom: 20px;
+}
+
 div#container.sub div#body {
     padding-left: 390px;
     font-family: Arial, sans-serif;
