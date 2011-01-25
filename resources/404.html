@@ -1,0 +1,27 @@
+<?php
+$title = "Page Not Found - ";
+ob_start();
+?>
+
+        <div id="container" class="sub">
+            <div class="header">
+                <h1>PHP Community
+                <span>Conference</span></h1>
+                <div id="nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                    </ul>
+                </div>
+                <div id="social">
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.phpcon.org%2F&amp;layout=button_count&amp;show_faces=false&amp;width=80&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true" id="fbLike"></iframe>
+                    <p class="twitter">Follow Us: <a href="http://twitter.com/phpcomcon">PHPCOMCON</a></p>
+                </div>
+            </div>
+            <div id="body">
+                <h3>Aw Shucks!</h3>
+                <p>We're sorry, but the page you're looking for is no where to be found.</p>
+            </div>
+        </div>
+<?php
+$body = ob_get_clean();
+
