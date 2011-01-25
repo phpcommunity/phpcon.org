@@ -1,5 +1,9 @@
 @import url('grid.css');
 
+img {
+    border: 0;
+}
+
 div#container {
     width: 960px;
     margin: auto;
@@ -265,6 +269,10 @@ div#nav li a {
     color: #BD820E;
 }
 
+div#sponsors {
+    padding-bottom: 50px;
+}
+
 div#sponsors h1 {
     font-size: 18px;
     color: white;
@@ -284,5 +292,14 @@ div#sponsors h2 {
     font-weight: normal;
     text-transform: uppercase;
     line-height: 20px;
-    margin: 20px 0;
+    margin: 0;
+    clear: both;
+}
+
+div#sponsors div {
+    width: 75%;
+    float: right;
+    clear: left;
+    margin-top: -20px;
+    margin-bottom: 40px;
 }
