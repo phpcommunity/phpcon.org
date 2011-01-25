@@ -13,7 +13,7 @@ include($page);
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <link href="webfontkit/stylesheet.css" rel="stylesheet" type="text/css">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css?r=20110125-1" rel="stylesheet" type="text/css">
         <!-- Grab latest version of jQuery -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
         </script>
