@@ -209,7 +209,7 @@ li {
 .section {
     margin: auto;
     font-size: 14px;
-    padding-left: 400px;
+    padding-left: 430px;
 }
 
 .section p {
@@ -220,11 +220,11 @@ li {
 }
 
 .aside {
-    width: 325px;
-    margin-right: 25px;
+    width: 350px;
+    margin-right: 40px;
     float: left;
     font-size: 20px;
-    padding-left: 50px;
+    padding-left: 40px;
     /*background: url(../images/quote.png) no-repeat;*/
     height: 93px;
     position: relative;
