@@ -1,0 +1,39 @@
+<?php
+$title = 'About Us - ';
+ob_start();
+?>
+
+        <div id="container" class="sub">
+            <div class="header">
+                <h1>PHP Community
+                <span>Conference</span></h1>
+                <div id="nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li>About Us</li>
+                        <li><a href="/sponsorships">Sponsor Us</a></li>
+                        <li><a href="/cfp">CFP</a></li>
+                        <li><a href="/subscribe">Keep in Touch</a></li>
+                    </ul>
+                </div>
+                <div id="social">
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.phpcon.org%2F&amp;layout=button_count&amp;show_faces=false&amp;width=80&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true" id="fbLike"></iframe>
+                    <p class="twitter">Follow Us: <a href="http://twitter.com/phpcomcon">PHPCOMCON</a></p>
+                </div>
+            </div>
+            <div class="aside">
+                <p>We aim to inspire you to make great things with&#160;PHP.</p>
+            </div>
+            <div class="section">
+
+                <h2>About the PHP Community Conference</h2>
+                <p>The PHP Community Conference is a conference by and for the PHP community. It's for people who care about PHP and what they make with it.</p>
+                <p>Inspired by conferences like <a href="http://www.webstock.org.nz/">Webstock</a> and <a href="http://brooklynbeta.org/">Brooklyn Beta</a>, we want to make a friendly conference for us. Together with our friends and peers, we (<a href="http://twitter.com/ramsey">Ben</a>, <a href="http://twitter.com/lisamusing">Lisa</a>, and <a href="http://twitter.com/NickASloan">Nick</a>) aim to inspire you to make great things with PHP.</p>
+                <p>We believe the PHP community is just about the friendliest group around, and we're going to be sharing stories of successes, failures, and lessons learned along the way. Because this is our first conference, we're hoping you'll join us, roll up your sleeves, and help make this something we can all be proud of.</p>
+                <p>See you in Nashville!</p>
+
+            </div>
+        </div>
+<?php
+$body = ob_get_clean();
+
