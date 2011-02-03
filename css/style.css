@@ -171,6 +171,12 @@ div#container.sub div#body {
     color: #363636;
 }
 
+div#container.sub div#registrationbody {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #363636;
+}
+
 div#container.sub h2 {
     font-size: 20px;
     text-transform: uppercase;
