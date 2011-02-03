@@ -4,25 +4,27 @@ error_reporting(E_ALL);
 ini_set('display_errors', 0);
 
 $uri = $_SERVER['REQUEST_URI'];
-if (substr($uri, -1) == '/') {
-    $uri = substr($uri, 0, -1);
-}
+$base = dirname($_SERVER['SCRIPT_NAME']);
+$path = substr($uri, strlen($base));
+$parsedUrl = parse_url(basename($path));
+$requestedPage = $parsedUrl['path'];
 
-$requestedPage = substr($uri, strrpos($uri, '/') + 1);
 if (strtolower(substr($requestedPage, -5)) == '.html') {
-    header('Location: ' . substr($uri, 0, strrpos($uri, '/')) . '/' . substr($requestedPage, 0, -5), true, 301);
+    header('Location: ' . $base . (substr($base, -1) == '/' ? '' : '/') . substr($requestedPage, 0, -5), true, 301);
     exit;
 }
-if (strtolower($requestedPage) == 'index' || strtolower($requestedPage) == 'index.php') {
-    header('Location: /', true, 301);
+if (strtolower($requestedPage) == 'home' || strtolower($requestedPage) == 'index' || strtolower($requestedPage) == 'index.php') {
+    header('Location: ' . $base . (substr($base, -1) == '/' ? '' : '/'), true, 301);
     exit;
 }
-if (strlen($requestedPage) == 0) {
+if (!$requestedPage) {
     $requestedPage = 'home';
 }
 if (!ctype_alnum($requestedPage)) {
     $requestedPage = '404';
 }
+
+$baseHref = '//' . $_SERVER['SERVER_NAME'] . $base . (substr($base, -1) == '/' ? '' : '/');
 
 if (!(include 'resources/' . $requestedPage . '.html')) {
     header('HTTP/1.0 404 Not Found');
