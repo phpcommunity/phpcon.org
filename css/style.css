@@ -328,10 +328,44 @@ div#sponsors h2 {
     clear: both;
 }
 
-div#sponsors div {
+div#sponsors > div {
     width: 75%;
     float: right;
     clear: left;
     margin-top: -20px;
     margin-bottom: 40px;
+}
+
+div.communitySponsor {
+    width: 318px;
+    float: left;
+    height: 150px;
+    border: solid 1px #363636;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+div.communitySponsor img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+div.communitySponsor > div {
+    width: 250px;
+    float: left;
+}
+
+div.communitySponsor h3 {
+    line-height: 40px;
+    vertical-align: center;
+    font-family: "NevisBold";
+    font-weight: normal;
+}
+
+div.communitySponsor p {
+    line-height: 20px;
+    font-size: 14px;
 }
