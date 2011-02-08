@@ -337,35 +337,17 @@ div#sponsors > div {
 }
 
 div.communitySponsor {
-    width: 318px;
-    float: left;
-    height: 150px;
-    border: solid 1px #363636;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-div.communitySponsor img {
-    width: 48px;
-    height: 48px;
-    display: block;
-    float: left;
-    margin-right: 20px;
-}
-
-div.communitySponsor > div {
-    width: 250px;
-    float: left;
-}
-
-div.communitySponsor h3 {
-    line-height: 40px;
-    vertical-align: center;
     font-family: "NevisBold";
     font-weight: normal;
+    width: 318px;
+    float: left;
+    font-size: 24px;
 }
 
-div.communitySponsor p {
-    line-height: 20px;
-    font-size: 14px;
+div.communitySponsor img {
+    vertical-align: middle;
+}
+
+div.communitySponsor a {
+    line-height: 60px;
 }

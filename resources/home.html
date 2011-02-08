@@ -50,7 +50,7 @@ ob_start();
 	require_once('lib/Twitter.php');
 
 	// array of community_sponsors member Twitter handles
-	$community_sponsors = array('croscon');
+	$community_sponsors = array('croscon', 'cakephp');
 
 	// array of Twitter data for each community_sponsors member
 	$data['community_sponsors'] = array();
@@ -68,13 +68,10 @@ ob_start();
 	array_multisort($cnames, $data['community_sponsors']);
 	foreach ($data['community_sponsors'] as $person) {
     ?><div class="communitySponsor">
-        <img src="<?php echo $person['profile_image_url'];?>">
-        <div>
-            <h3>
-                <a href="<?php echo $person['url'];?>"><?php echo $person['name'];?></a>
-            </h3>
-            <p><?php echo $person['description'];?></p>
-        </div>
+        <a href="<?php echo $person['url'];?>">
+            <img src="<?php echo $person['profile_image_url'];?>">
+            <?php echo $person['name'];?>
+        </a>
     </div>
         <?php
 	}
