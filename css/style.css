@@ -341,13 +341,18 @@ div.communitySponsor {
     font-weight: normal;
     width: 318px;
     float: left;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 div.communitySponsor img {
     vertical-align: middle;
 }
 
-div.communitySponsor a {
+div.communitySponsor > a {
     line-height: 60px;
+    vertical-align: middle;
+}
+
+div#sponsors > div > a {
+    margin-right: 20px;
 }
