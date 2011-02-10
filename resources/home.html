@@ -36,13 +36,12 @@ ob_start();
                 <h2>Gold Sponsors</h2>
                 <div>
                     <a href="http://www.facebook.com/opensource/"><img src="images/sponsor-facebook.png" alt="Facebook"/></a>
-                    &nbsp;&nbsp;&nbsp;
                     <a href="http://cakedc.com"><img src="images/sponsor-cakedc.png" alt="CakeDC"/></a>
                 </div>
                 <h2>Silver Sponsors</h2>
                 <div>
-                    <a href="http://servergrove.com/"><img src="images/sponsor-servergrove.png" alt="ServerGrove"/></a>
-                    <a href="http://vaco.com/"><img src="images/VACO_GLOBAL_CLR.png" alt="Vaco"/></a>
+                    <a href="http://servergrove.com/"><img src="images/servergrove.png" alt="ServerGrove"/></a>
+                    <a href="http://vaco.com/"><img src="images/vaco.png" alt="Vaco"/></a>
                 </div>
                 <h2>Community Sponsors</h2>
                 <div>
@@ -51,7 +50,7 @@ ob_start();
 	require_once('lib/Twitter.php');
 
 	// array of community_sponsors member Twitter handles
-	$community_sponsors = array('croscon', 'cakephp');
+	$community_sponsors = array('croscon', 'cakephp', 'wonderproxy');
 
 	// array of Twitter data for each community_sponsors member
 	$data['community_sponsors'] = array();
@@ -68,7 +67,9 @@ ob_start();
 	// Sort people by first name using temporary arrays of first names.
 	array_multisort($cnames, $data['community_sponsors']);
 	foreach ($data['community_sponsors'] as $person) {
-    ?><div class="communitySponsor">
+    ?>
+	<!--<?php var_dump($person);?> -->
+	<div class="communitySponsor">
         <a href="<?php echo $person['url'];?>">
             <img src="<?php echo $person['profile_image_url'];?>">
             <?php echo $person['name'];?>
