@@ -325,23 +325,26 @@ div#sponsors h2 {
     text-transform: uppercase;
     line-height: 20px;
     margin: 0;
+    width: 300px;
     clear: both;
 }
 
 div#sponsors > div {
     width: 75%;
     float: right;
+    vertical-align: top;
     clear: left;
     margin-top: -20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 div.communitySponsor {
     font-family: "NevisBold";
     font-weight: normal;
-    width: 318px;
+    width: 48px;
+    padding-right: 25px;
     float: left;
-    font-size: 20px;
+    font-size: 11px;
 }
 
 div.communitySponsor img {
@@ -349,7 +352,7 @@ div.communitySponsor img {
 }
 
 div.communitySponsor > a {
-    line-height: 60px;
+    line-height: 20px;
     vertical-align: middle;
 }
 
