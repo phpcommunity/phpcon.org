@@ -12,6 +12,8 @@ include($page);
         <meta property="fb:admins" content="623959689,796025211,756315701,12105030" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+        <base href="<?php echo $baseHref; ?>" />
+
         <link href="webfontkit/stylesheet.css" rel="stylesheet" type="text/css">
         <link href="css/style.css?r=20110125-2" rel="stylesheet" type="text/css">
         <!-- Grab latest version of jQuery -->

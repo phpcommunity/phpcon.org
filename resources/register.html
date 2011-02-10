@@ -1,0 +1,49 @@
+<?php
+$title = 'Register - ';
+ob_start();
+?>
+
+        <div id="container" class="sub">
+            <div class="header">
+                <h1>PHP Community
+                <span>Conference</span></h1>
+                <div id="nav">
+                    <ul>
+                        <li><a href="home">Home</a></li>
+                        <li>Register</li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="sponsorships">Sponsor Us</a></li>
+                        <li><a href="subscribe">Keep in Touch</a></li>
+                    </ul>
+                </div>
+                <div id="social">
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.phpcon.org%2F&amp;layout=button_count&amp;show_faces=false&amp;width=80&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true" id="fbLike"></iframe>
+                    <p class="twitter">Follow Us: <a href="http://twitter.com/phpcomcon">PHPCOMCON</a></p>
+                </div>
+            </div>
+            <div class="aside">
+                <p>We can't wait to see you in Nashville!</p>
+            </div>
+            <div class="section">
+            <div id="registrationbody">
+                <h2>Registration for the PHP Community Conference Includes</h2>
+                <ul>
+		<li>access to the tutorial day on April 21st</li>
+		<li>access to the conference day on April 22nd</li>
+		<li>lunch on both days</li>
+		<li>access to the after-party on the 22nd</li>
+		<li>a great sense of community at the conference itself</li>
+		</ul>
+
+		<p>
+		We'll post the schedule as soon as we can, but you can expect two informative tracks on tutorial day and two inspiring tracks on conference day. The current price of <span style="font-size: 16px;">$349.95</span> is only available until the schedule goes up or the first 100 tickets are sold, so <a href="http://phpcon.eventbrite.com/">buy now</a> and save!
+		</p>
+		<p>
+		Planning on attending, but want to do more to help your community conference succeed? Community Sponsorships are reasonably priced at $500, and include admission to the conference. Purchase the sponsorship through <a href="http://phpconsponsors.eventbrite.com/">Eventbrite</a> or email us at <a href="mailto:sponsors@phpcon.org">sponsors@phpcon.org</a> for more information.
+		</p>
+            </div>
+	    </div>
+        </div>
+<?php
+$body = ob_get_clean();
+
