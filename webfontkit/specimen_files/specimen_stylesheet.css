@@ -388,5 +388,12 @@ code {
 
 /* @end */
 
+#rendering h1 {
+	font-family: Arial, sans-serif;
+}
+.render_table td {
+	font: 11px "Courier New", Courier, mono;
+	vertical-align: middle;
+}
 
 

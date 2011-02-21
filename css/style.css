@@ -356,3 +356,22 @@ div.communitySponsor > a {
 div#sponsors > div > a {
     margin-right: 20px;
 }
+
+div#container.sub.speakers ul.speakers {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+div#container.sub.speakers ul.speakers h3 {
+	font-family: "MuseoSlab500";
+}
+
+div#container.sub.speakers ul.speakers h4 {
+	font-family: "MuseoSlab500";
+	color: #363636;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
