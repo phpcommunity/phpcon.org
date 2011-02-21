@@ -368,13 +368,13 @@ div#container.sub.speakers ul.speakers {
 
 div#container.sub.speakers ul.speakers h3 {
 	font-family: "MuseoSlab500";
+	font-weight: bold;
 }
 
 div#container.sub.speakers ul.speakers h4 {
 	font-family: "MuseoSlab500";
 	color: #363636;
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 16px;
 }
 
 
