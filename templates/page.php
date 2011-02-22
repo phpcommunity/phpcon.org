@@ -22,6 +22,7 @@ include($page);
 
           <!-- Include the hashgrid script -->
         <script type="text/javascript" src="js/hashgrid.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
 <?php echo $body; ?>
