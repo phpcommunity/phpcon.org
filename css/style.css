@@ -212,13 +212,16 @@ li {
     line-height: 20px;
 }
 
+.section, .sectionWide{
+    font-size: 14px;
+}
+
 .section {
     margin: auto;
-    font-size: 14px;
     padding-left: 430px;
 }
 
-.section p {
+.section p, .sectionWide p {
     line-height: 20px;
     margin: 0;
     margin-bottom: 20px;
@@ -302,9 +305,10 @@ div#nav li a {
 
 div#sponsors {
     padding-bottom: 50px;
+    clear: both;
 }
 
-div#sponsors h1 {
+div.sectionWide h1 {
     font-size: 18px;
     color: white;
     background-color: #363636;
@@ -313,11 +317,11 @@ div#sponsors h1 {
     font-weight: normal;
     text-transform: uppercase;
     height: 26px;
-    margin: 0 0 34px 0;
+    margin: 20px 0 34px 0;
     padding-left: 8px;
 }
 
-div#sponsors h2 {
+div.sectionWide h2 {
     color: #363636;
     font-size: 18px;
     font-family: "NevisBold";
@@ -368,13 +372,13 @@ div#container.sub.speakers ul.speakers {
 
 div#container.sub.speakers ul.speakers h3 {
 	font-family: "MuseoSlab500";
-	font-weight: bold;
 }
 
 div#container.sub.speakers ul.speakers h4 {
 	font-family: "MuseoSlab500";
 	color: #363636;
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 
