@@ -1,0 +1,35 @@
+<?php
+$title = 'Location - ';
+ob_start();
+?>
+	<div id="container" class="sub location">
+            <div class="header">
+                <h1>PHP Community
+                <span>Conference</span></h1>
+                <div id="nav">
+                    <ul>
+                        <li><a href="home">Home</a></li>
+                        <li><a href="speakers">Speakers</a></li>
+                        <li>Location</li>
+			<li><a href="about">About Us</a></li>
+                        <li><a href="sponsorships">Sponsor Us</a></li>
+                    </ul>
+                </div>
+                <div id="social">
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.phpcon.org%2F&amp;layout=button_count&amp;show_faces=false&amp;width=80&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true" id="fbLike"></iframe>
+                    <p class="twitter">Follow Us: <a href="http://twitter.com/phpcomcon">PHPCOMCON</a></p>
+                </div>
+            </div>
+            <div class="aside">
+                <img src="http://farm5.static.flickr.com/4122/4752661782_8097fd6545.jpg" alt="aVenue" style="width: 350px;">
+            </div>
+            <div class="section">
+                <h2>Venue</h2>
+                <p>We've booked a fantastic space for the first PHP Community Conference. <a href="http://www.nashvilleeventspace.com/venues/avenue/">aVenue</a> is one of Nashville's hippest venues. Located only a block away from the Nashville Hilton, aVenue is the perfect space for our conference.</p>
+                <h2>Hotel</h2>
+                <p>Some text about the hotel.</p>
+                <h2>Travel</h2>
+                <p>Located only 10 miles from the Nashville Hilton, Nashville International (BNA) is a convenient  arrival location for your visit. The Grey Line Airport Express provides shuttle service to the hotel for $12 one-way, or $18 round trip. There are other taxi and shuttle services available as well.</p>
+            </div>
+<?php
+$body = ob_get_clean();
