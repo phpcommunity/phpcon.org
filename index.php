@@ -17,11 +17,11 @@ $requestedPage = $parsedUrl['path'];
 //echo "requestedPage is: ".$requestedPage."<br>";
 
 if (strtolower(substr($requestedPage, -5)) == '.html') {
-    header('Location: ' . $base . (substr($base, -1) == '/' ? '' : '/') . substr($requestedPage, 0, -5), true, 302);
+    header('Location: ' . $base . (substr($base, -1) == '/' ? '' : '/') . substr($requestedPage, 0, -5), true, 307);
     exit;
 }
 if (strtolower($requestedPage) == 'home' || strtolower($requestedPage) == 'index' || strtolower($requestedPage) == 'index.php') {
-    header('Location: ' . $base . (substr($base, -1) == '/' ? '' : '/'), true, 302);
+    header('Location: ' . $base . (substr($base, -1) == '/' ? '' : '/'), true, 307);
     exit;
 }
 if (!$requestedPage) {
