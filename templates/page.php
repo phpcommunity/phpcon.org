@@ -5,14 +5,14 @@ include($page);
 <html>
     <head>
         <title><?php echo $title; ?>PHP Community Conference</title>
-        <meta property="og:title" content="PHP Community Conference" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://www.phpcon.org/" />
-        <meta property="og:image" content="http://www.phpcon.org/images/guitar.png" />
-        <meta property="fb:admins" content="623959689,796025211,756315701,12105030" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta property="og:title" content="PHP Community Conference">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://www.phpcon.org/">
+        <meta property="og:image" content="http://www.phpcon.org/images/guitar.png">
+        <meta property="fb:admins" content="623959689,796025211,756315701,12105030">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <base href="<?php echo $baseHref; ?>" />
+        <base href="<?php echo $baseHref; ?>">
 
         <link href="webfontkit/stylesheet.css" rel="stylesheet" type="text/css">
         <link href="css/style.css?r=20110125-2" rel="stylesheet" type="text/css">
