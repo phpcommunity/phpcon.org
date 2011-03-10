@@ -10,7 +10,7 @@ class Twitter
         }
 
         // Store cached profiles in /cache for now.
-        $cache = "cache/cache-twitter-{$username}";
+        $cache = dirname($_SERVER['SCRIPT_FILENAME']) . "/cache/cache-twitter-{$username}";
 	//echo "cache is" . $cache . "<br>";
         if (file_exists($cache)) {
 	//	echo "file exists<br>";
@@ -28,6 +28,7 @@ class Twitter
                 return array('error' => 'Twitter is not responding.');
             } else {
                 $profile = json_decode($json, TRUE);
+                
                 file_put_contents($cache, serialize($profile));
 
                 return $profile;
