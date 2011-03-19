@@ -382,4 +382,14 @@ div#container.sub.speakers ul.speakers h4 {
 	font-weight: bold;
 }
 
+div#main.section {
+    font-size: 16px;
+    line-height: 20px;
+}
 
+div#main.section {
+    margin: 10px 0;
+}
+
+div#main.section li {
+    margin: 10px 0;
