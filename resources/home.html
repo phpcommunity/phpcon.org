@@ -100,7 +100,6 @@ ob_start();
 	array_multisort($cnames, $data['community_sponsors']);
 	foreach ($data['community_sponsors'] as $person) {
     ?>
-	<!--<?php var_dump($person);?> -->
 	<div class="communitySponsor">
         <a href="<?php echo $person['url'];?>">
             <img src="<?php echo $person['profile_image_url'];?>">
