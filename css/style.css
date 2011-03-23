@@ -393,3 +393,41 @@ div#main.section {
 
 div#main.section li {
     margin: 10px 0;
+}
+
+div#schedule.section {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+table.schedule td.hour {
+    border-right: 0;
+    vertical-align: top;
+
+}
+
+table.schedule {
+    text-align: center;
+}
+
+table.schedule td.minute {
+    border-left: 0;
+}
+
+table.schedule td.lunch {
+    background-color: green;
+}
+
+table.schedule td.break {
+    background-color: red;
+}
+
+table.schedule td.registration {
+    background-color: yellow;
+}
+
+table, table * {
+    border: solid 1px #666;
+    border-collapse: collapse;
+}
