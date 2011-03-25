@@ -451,6 +451,7 @@ table.schedule td.break {
 
 table.schedule td.registration {
     background-color: #fff48e;
+<<<<<<< HEAD
 }
 
 table.schedule tbody tr.highlight {
@@ -460,5 +461,11 @@ table.schedule tbody tr.highlight {
 table.schedule tr.highlight td.hour,
 table.schedule tr.highlight td.minute {
     background-color: transparent;
+=======
+}
+
+table.schedule tbody tr.highlight {
+    background-color: #99ffcc;
+>>>>>>> d50c2d1bcca6da67073e09192ec7cc86de0a8962
 }
 
