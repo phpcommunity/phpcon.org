@@ -401,33 +401,64 @@ div#schedule.section {
     padding: 0;
 }
 
+table.schedule{
+	background: #fff;
+	border-collapse: collapse;
+	border: 2px solid #363636;
+	border-bottom: none;
+	border-right: none;
+	text-align: center;
+}
+
+table.schedule tr{
+	border-bottom: 2px solid #363636;
+}
+
+table.schedule th,
+table.schedule td{
+	border-right: 2px solid #363636;
+	padding: 10px;
+}
+
+table.schedule td{
+	background: #eee;
+	padding: 5px 10px;
+}
+
+table.schedule td.hour,
+table.schedule td.minute{
+	background: #fff;
+}
+
 table.schedule td.hour {
     border-right: 0;
     vertical-align: top;
-
-}
-
-table.schedule {
-    text-align: center;
+    padding-right: 5px;
 }
 
 table.schedule td.minute {
     border-left: 0;
+    padding-left: 0;
 }
 
 table.schedule td.lunch {
-    background-color: green;
+    background-color: #81bde8;
 }
 
 table.schedule td.break {
-    background-color: red;
+    background-color: #f48899;
 }
 
 table.schedule td.registration {
-    background-color: yellow;
+    background-color: #fff48e;
 }
 
-table, table * {
-    border: solid 1px #666;
-    border-collapse: collapse;
+table.schedule tbody tr.highlight {
+    background-color: #99ffcc;
 }
+
+table.schedule tr.highlight td.hour,
+table.schedule tr.highlight td.minute {
+    background-color: transparent;
+}
+
