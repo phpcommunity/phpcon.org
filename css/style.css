@@ -462,3 +462,6 @@ table.schedule tr.highlight td.minute {
     background-color: transparent;
 }
 
+table.schedule a {
+    color: #363636;
+}
