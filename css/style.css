@@ -346,10 +346,10 @@ div#sponsors > div {
 div.communitySponsor {
     font-family: "NevisBold";
     font-weight: normal;
-    width: 48px;
     padding-right: 25px;
     float: left;
     font-size: 11px;
+    width: 200px;
 }
 
 div.communitySponsor img {
