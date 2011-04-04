@@ -359,6 +359,7 @@ div.communitySponsor img {
 div.communitySponsor > a {
     line-height: 20px;
     vertical-align: middle;
+    text-decoration: none;
 }
 
 div#sponsors > div > a {
