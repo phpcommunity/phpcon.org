@@ -366,6 +366,10 @@ div#sponsors > div > a {
     margin-right: 20px;
 }
 
+div#sponsors > div > a > img{
+    vertical-align: middle;
+}
+
 div#container.sub.speakers ul.speakers {
 	list-style-type: none;
 	margin-left: 0;
