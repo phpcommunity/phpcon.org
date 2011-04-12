@@ -354,6 +354,8 @@ div.communitySponsor {
 
 div.communitySponsor img {
     vertical-align: middle;
+    width: 48px;
+    height: 48px;
 }
 
 div.communitySponsor > a {
