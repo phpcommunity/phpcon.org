@@ -346,23 +346,30 @@ div#sponsors > div {
 div.communitySponsor {
     font-family: "NevisBold";
     font-weight: normal;
-    width: 48px;
     padding-right: 25px;
     float: left;
     font-size: 11px;
+    width: 200px;
 }
 
 div.communitySponsor img {
     vertical-align: middle;
+    width: 48px;
+    height: 48px;
 }
 
 div.communitySponsor > a {
     line-height: 20px;
     vertical-align: middle;
+    text-decoration: none;
 }
 
 div#sponsors > div > a {
     margin-right: 20px;
+}
+
+div#sponsors > div > a > img{
+    vertical-align: middle;
 }
 
 div#container.sub.speakers ul.speakers {

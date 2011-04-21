@@ -15,11 +15,9 @@ ob_start();
                 <div id="nav">
                     <ul>
                         <li>Home</li>
-                        <li><a href="http://phpcon.eventbrite.com/">Register</a></li>
                         <li><a href="schedule">Schedule</a></li>
                         <li><a href="location">Location</a></li>
                         <li><a href="about">About</a></li>
-                        <li><a href="sponsorships">Sponsor</a></li>
                     </ul>
                 </div>
             </div>
@@ -27,17 +25,22 @@ ob_start();
                 <p>A conference for people who care about PHP and what they make with it.</p>
             </div>
             <div class="section" id="main">
-                <h4><a href="http://phpcon.eventbrite.com">Register now for only $300!</a></h4>
-                <p>Registration gets you:</p>
-                <ul>
-                    <li>Two informative tutorials on Thursday that will leave
-                    you with new skills that you can use in your work right away.</li>
-                    <li>A Friday full of <a href="speakers">excellent speakers</a>
-                    sharing their stories, and talking about solutions to real
-                    problems.</li>
-                    <li>A Pecha Kucha event on Friday evening, with a chance to
-                    win one of two iPad 2s, sponsored by CakeDC.</li>
-                </ul>
+                <h4>The PHP Community Conference is Sold Out!</h4>
+                <a href="http://tek11.phparch.com/" style="display: block;
+                    float: right;"><img
+                    src="images/tek11.png" width="200"/></a>
+                <p>Thanks to our phenomenal sponsors, speakers, and attendees,
+                and everyone else that has had kind things to say about our
+                efforts, we have sold out the first PHP Community
+                Conference!</p>
+                <p>Though you may have missed us for 2011, we'll be back again
+                next year. We're already working on how to make the PHP
+                Community Conference even better in 2012. In the meantime, check
+                out <a
+                    href="http://tek11.phparch.com/">php|tek 2011</a> next month
+                in Chicago, one of
+                many amazing PHP community events that inspired The PHP Community
+                Conference.</p>
             </div>
 
             <div class="sectionWide">
@@ -55,8 +58,6 @@ ob_start();
                 talks by our awesome attendees. The best pecha kucha talks
                 will have a chance at winning one of two iPad 2s sponsored by
                 CakeDC!</p>
-
-                <p>We can't wait to see you there, so <a href="http://phpcon.eventbrite.com">register</a> now.</p>
             </div>
 
             <div id="sponsors" class="sectionWide">
@@ -69,11 +70,17 @@ ob_start();
                 <div>
                     <a href="http://www.facebook.com/opensource/"><img src="images/sponsor-facebook.png" alt="Facebook"/></a>
                     <a href="http://microsoft.com/web/webmatrix/"><img src="images/sponsor-webmatrix.png" alt="Microsoft Web Matrix"/></a>
+                    <a href="http://www.redventures.com/"><img src="images/sponsor-redventures.jpg" alt="Red Ventures"/></a>
+                    <a href="http://tropo.com/"><img src="images/sponsor-tropo.jpg" alt="Tropo"/></a>
+                    <a href="http://iostudio.com/"><img
+                        src="images/sponsor-iostudio.jpg" alt="ioStudio"/></a>
                 </div>
                 <h2>Silver Sponsors</h2>
                 <div>
                     <a href="http://servergrove.com/"><img src="images/servergrove.png" alt="ServerGrove"/></a>
                     <a href="http://vaco.com/"><img src="images/vaco.png" alt="Vaco"/></a>
+                    <a href="http://moontoast.com/"><img
+                        src="images/sponsor-moontoast.jpg"/></a>
                 </div>
                 <h2>Community Sponsors</h2>
                 <div>
@@ -83,7 +90,8 @@ ob_start();
 
 	// array of community_sponsors member Twitter handles
 	$community_sponsors = array('croscon', 'cakephp', 'wonderproxy',
-    'lisamusing');
+    'lisamusing','thezippykid',
+    'companyfiftytwo','binarypress','zend','urvew','emmaemail');
 
 	// array of Twitter data for each community_sponsors member
 	$data['community_sponsors'] = array();
