@@ -31,7 +31,9 @@ if (!ctype_alnum($requestedPage)) {
     $requestedPage = '404';
 }
 
-$baseHref = '//' . $_SERVER['SERVER_NAME'] . $base . (substr($base, -1) == '/' ? '' : '/');
+$serverName = $_SERVER['SERVER_NAME'];
+$serverName .= ($_SERVER['SERVER_PORT'] != 80) ? ':' . $_SERVER['SERVER_PORT'] : '';
+$baseHref = '//' . $serverName . $base . (substr($base, -1) == '/' ? '' : '/');
 
 if (!(include 'resources/' . $requestedPage . '.html')) {
     header('HTTP/1.0 404 Not Found');
