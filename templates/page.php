@@ -1,6 +1,3 @@
-<?php
-include($page);
-?>
 <!DOCTYPE html>
 <html>
     <head>
