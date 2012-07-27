@@ -1,13 +1,12 @@
-Redirect temp /about /2011/about
-Redirect temp /location /2011/location
-Redirect temp /schedule /2011/schedule
-Redirect temp /speakers /2011/speakers
-Redirect temp /sponsorships /2011/sponsorships
-Redirect temp /subscribe /2011/subscribe
+Redirect temp /about http://phpcon.org/2011/about
+Redirect temp /location http://phpcon.org/2011/location
+Redirect temp /schedule http://phpcon.org/2011/schedule
+Redirect temp /speakers http://phpcon.org/2011/speakers
+Redirect temp /sponsorships http://phpcon.org/2011/sponsorships
+Redirect temp /subscribe http://phpcon.org/2011/subscribe
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    #RewriteBase /~ramsey/phpcon-web/
     RewriteRule ^(resources|templates).*$ http://phpcon.org/ [R=302,L]
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
