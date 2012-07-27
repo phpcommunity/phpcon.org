@@ -1,0 +1,118 @@
+<?php
+$title = "";
+ob_start();
+?>
+        <div id="container" class="home">
+            <div class="header">
+                <div id="social">
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.phpcon.org%2F&amp;layout=button_count&amp;show_faces=false&amp;width=80&amp;action=like&amp;colorscheme=light&amp;height=21" style="border:none; overflow:hidden; width:80px; height:21px;" id="fbLike"></iframe>
+                    <p class="twitter">Follow Us: <a href="http://twitter.com/phpcomcon">PHPCOMCON</a></p>
+                </div>
+                <h1>PHP Community
+                <span>Conference</span></h1>
+                <h2>April 21 <span>&amp;</span> 22</h2>
+                <h3>Nashville,<span>&nbsp;</span>TN</h3>
+                <div id="nav">
+                    <ul>
+                        <li>Home</li>
+                        <li><a href="2011/schedule">Schedule</a></li>
+                        <li><a href="2011/location">Location</a></li>
+                        <li><a href="2011/about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aside">
+                <p>A conference for people who care about PHP and what they make with it.</p>
+            </div>
+            <div class="section" id="main">
+                <h4>The PHP Community Conference is Sold Out!</h4>
+                <p>Thanks to our phenomenal sponsors, speakers, and attendees,
+                and everyone else that has had kind things to say about our
+                efforts, we have sold out the first PHP Community
+                Conference!</p>
+            </div>
+
+            <div class="sectionWide">
+                <h1>The Conference</h1>
+                <p>Inspired by conferences like Webstock and Brooklyn Beta, we want to make a friendly conference for us. Together with our friends and peers, we aim to inspire you to make great things with PHP.</p>
+
+                <p>The PHP Community Conference is a two-day event. We kick
+                things off with a tutorial day that will introduce you to tools
+                and ideas that you can use in your code right away. The second
+                day will consist of presentations that will inspire you to
+                create something new with PHP. With the help of our sponsors, we
+                are able to offer admission to the entire event for $300. We'll
+                provide lunch and snacks on both days. On Friday night, we'll
+                finish off the conference with a party featuring pecha kucha
+                talks by our awesome attendees. The best pecha kucha talks
+                will have a chance at winning one of two iPad 2s sponsored by
+                CakeDC!</p>
+            </div>
+
+            <div id="sponsors" class="sectionWide">
+                <h1>Our Sponsors</h1>
+                <h2>Platinum Sponsors</h2>
+                <div>
+                    <a href="http://cakedc.com"><img src="images/sponsor-cakedcplat2.png" alt="CakeDC"/></a>
+                </div>
+                <h2>Gold Sponsors</h2>
+                <div>
+                    <a href="http://www.facebook.com/opensource/"><img src="images/sponsor-facebook.png" alt="Facebook"/></a>
+                    <a href="http://microsoft.com/web/webmatrix/"><img src="images/sponsor-webmatrix.png" alt="Microsoft Web Matrix"/></a>
+                    <a href="http://www.redventures.com/"><img src="images/sponsor-redventures.jpg" alt="Red Ventures"/></a>
+                    <a href="http://tropo.com/"><img src="images/sponsor-tropo.jpg" alt="Tropo"/></a>
+                    <a href="http://iostudio.com/"><img
+                        src="images/sponsor-iostudio.jpg" alt="ioStudio"/></a>
+                </div>
+                <h2>Silver Sponsors</h2>
+                <div>
+                    <a href="http://servergrove.com/"><img src="images/servergrove.png" alt="ServerGrove"/></a>
+                    <a href="http://vaco.com/"><img src="images/vaco.png" alt="Vaco"/></a>
+                    <a href="http://moontoast.com/"><img
+                        src="images/sponsor-moontoast.jpg"/></a>
+                </div>
+                <h2>Community Sponsors</h2>
+                <div>
+<?php
+	// require the Twitter access class
+	require_once('lib/Twitter.php');
+
+	// array of community_sponsors member Twitter handles
+	$community_sponsors = array('croscon', 'cakephp', 'wonderproxy',
+    'lisamusing','thezippykid',
+    'companyfiftytwo','binarypress','zend','urvew','emmaemail');
+
+	// array of Twitter data for each community_sponsors member
+	$data['community_sponsors'] = array();
+        foreach ($community_sponsors as $username) {
+            $data['community_sponsors'][] = Twitter::profile($username);
+        }
+
+        foreach ($data['community_sponsors'] as $key => $person) {
+	    // create temp array of first names for sorting with later
+            $cnames[$key] = strtolower($person['name']);
+            $data['community_sponsors'][$key]['description'] = htmlentities($person['description'], ENT_QUOTES, 'UTF-8');
+        }
+
+	// Sort people by first name using temporary arrays of first names.
+	array_multisort($cnames, $data['community_sponsors']);
+	foreach ($data['community_sponsors'] as $person) {
+    ?>
+	<div class="communitySponsor">
+        <a href="<?php echo $person['url'];?>">
+            <img src="<?php echo $person['profile_image_url'];?>">
+            <?php echo $person['name'];?>
+        </a>
+    </div>
+        <?php
+	}
+?>
+                </div>
+                <h2>Media Sponsors</h2>
+                <div>
+                    <a href="http://phpdeveloper.org"><img src="http://phpdeveloper.org/Test/public/img/ads/phpdeveloper-media.jpg" width="150" style="border: 0;" /></a>
+                </div>
+            </div>
+        </div>
+<?php
+$body = ob_get_clean();
