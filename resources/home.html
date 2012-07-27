@@ -1,0 +1,33 @@
+<?php
+$title = "Returning March 2013 - ";
+ob_start();
+?>
+        <div id="container" class="home">
+            <div class="header">
+                <div id="social">
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.phpcon.org%2F&amp;layout=button_count&amp;show_faces=false&amp;width=80&amp;action=like&amp;colorscheme=light&amp;height=21" style="border:none; overflow:hidden; width:80px; height:21px;" id="fbLike"></iframe>
+                    <p class="twitter">Follow Us: <a href="http://twitter.com/phpcomcon">PHPCOMCON</a></p>
+                </div>
+                <h1>PHP Community
+                <span>Conference</span></h1>
+                <h2>March 2013</h2>
+                <h3>Nashville,<span>&nbsp;</span>TN</h3>
+            </div>
+            <div class="aside">
+                <p>A conference for people who care about PHP and what they make with it.</p>
+            </div>
+            <div class="section" id="main">
+                <h4>The PHP Community Conference Returns in March 2013!</h4>
+                <p>In 2011, we had our first ever conference. Our sponsors,
+                speakers, and attendees were phenomenal. You rocked so much that
+                we want to do it again!</p>
+                <p>Mark your calendars for March 2013. This friendly, little PHP
+                conference is returning to Nashville, TN. Keep your eyes on this
+                space and <a href="http://twitter.com/phpcomcon">follow us on
+                Twitter</a>, for more details over the coming weeks and months.</p>
+                <p>We've archived our <a href="/2011">2011 conference web site</a>
+                for your convenience.</p>
+            </div>
+        </div>
+<?php
+$body = ob_get_clean();
