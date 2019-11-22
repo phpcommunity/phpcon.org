@@ -26,10 +26,6 @@
  *     cookiePrefix: 'mygrid'   // prefix for the cookie name
  * });
  */
-if (typeof jQuery == "undefined") {
-	alert("Hashgrid: jQuery not loaded. Make sure it's linked to your pages.");
-}
-
 
 /**
  * hashgrid overlay
