@@ -1,1 +1,3 @@
+https://phpcomcon.org/* https://phpcon.org/:splat 301!
+https://www.phpcomcon.org/* https://phpcon.org/:splat 301!
 https://phpcon.netlify.com/* https://phpcon.org/:splat 301!
